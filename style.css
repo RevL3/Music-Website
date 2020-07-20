@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    background: rgb(130,189,47);
+    background: linear-gradient(rgba(130,189,47,1) 0%, rgba(163,240,152,1) 46%, rgba(15,168,80,1) 100%);  
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.box{
+    flex:1;
+    border: 1px solid red;
+}
+
+.box1{
+   display: flex;
+   background-image: url(images/header.svg) no-repeat;
+    background-size: contain;
+   
+}
+
+.box2{
+   flex-grow: 0;
+}
+
+a{
+    color: greenyellow
+     
+}
+
+a:hover{
+    color: red;
+}
+
+img{
+    max-width: 40vh;
+}
+
+.left-header{
+    flex: 2;
+    
+}
+ 
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); opacity: 0.3; }
+    50% { -webkit-transform: scale(1); opacity: 1; }
+    100% { -webkit-transform: scale(1); opacity: 0.3; }
+}
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.3; }
+}
+
+ .big-logo{
+   
+    
+    -webkit-animation: pulse 6s 6infinite ease-in-out;
+    -o-animation: pulse 6s infinite ease-in-out;
+    -ms-animation: pulse 6s infinite ease-in-out; 
+    -moz-animation: pulse 6s infinite ease-in-out; 
+    animation: pulse 6s infinite ease-in-out;
+}
